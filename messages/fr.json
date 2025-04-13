@@ -1,5 +1,5 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "example_message": "Born ju {username}",
-  "WelcomeMessage": "Welcome to Inlang!"
+  "WelcomeMessage": "Bienvenue à la maison !"
 }
