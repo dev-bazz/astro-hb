@@ -2,8 +2,24 @@
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import { m } from '@/paraglide/messages.js';
+import { setLocale } from '@/paraglide/runtime.js';
 ---
 
 <main>
-	<h1>{m.example_message({ username: 'BaZz' }, { locale: 'de' })}</h1>
+	<h1>{m.example_message({ username: 'BaZz' })}</h1>
+	<button id="ch">Fr</button>
+	<button id="en">Er</button>
 </main>
+<script>
+	import { setLocale } from '@/paraglide/runtime.js';
+	const button = document.getElementById('ch');
+	button?.addEventListener('click', () => {
+		console.log('click');
+		setLocale('fr');
+	});
+	const button2 = document.getElementById('en');
+	button2?.addEventListener('click', () => {
+		console.log('click');
+		setLocale('en');
+	});
+</script>
